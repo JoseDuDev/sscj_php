@@ -51,4 +51,16 @@ function edit() {
   }
 }
 
+function view($id = null) {
+  global $pastoral;
+  $pastoral = find('pastorais', $id);
+}
+
+function delete($id = null) {
+
+  global $pastoral;
+  $pastoral = remove('pastorais', $id);
+
+  header('location: index.php');
+}
 ?>
