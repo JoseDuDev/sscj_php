@@ -104,9 +104,13 @@
       <div class="row align-items-center">
         <div class="col-xl-6  col-md-6">
           <div class="about_thumb">
-            <img src="assets/img/about/about.png" alt="">
+            <img
+              src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/about/about.png"
+              alt="">
             <div class="pattern_img d-none d-lg-block">
-              <img src="assets/img/pattern/pattern.svg" alt="">
+              <img
+                src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/pattern/pattern.svg"
+                alt="">
             </div>
           </div>
         </div>
@@ -142,14 +146,18 @@
     </div>
     <div class="border_bottom_1px position-relative">
       <div class="pattern_img d-none d-xl-block">
-        <img src="assets/img/pattern/pattern.png" alt="">
+        <img
+          src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/pattern/pattern.png"
+          alt="">
       </div>
       <div class="row">
         <div class="col-xl-12">
           <div class="service_active owl-carousel">
             <div class="single_service">
               <div class="thumb">
-                <img src="assets/img/service/1.png" alt="">
+                <img
+                  src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/service/1.png"
+                  alt="">
               </div>
               <div class="service_info">
                 <a href="#">
@@ -162,7 +170,9 @@
             </div>
             <div class="single_service">
               <div class="thumb">
-                <img src="assets/img/service/2.png" alt="">
+                <img
+                  src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/service/2.png"
+                  alt="">
               </div>
               <div class="service_info">
                 <a href="#">
@@ -175,7 +185,9 @@
             </div>
             <div class="single_service">
               <div class="thumb">
-                <img src="assets/img/service/3.png" alt="">
+                <img
+                  src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/service/3.png"
+                  alt="">
               </div>
               <div class="service_info">
                 <a href="#">
@@ -188,7 +200,9 @@
             </div>
             <div class="single_service">
               <div class="thumb">
-                <img src="assets/img/service/1.png" alt="">
+                <img
+                  src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/service/1.png"
+                  alt="">
               </div>
               <div class="service_info">
                 <a href="#">
@@ -233,7 +247,8 @@
       <div class="col-xl-3 col-lg-3 col-md-6 grid-item cat3 cat3">
         <div class="single_gallery">
           <div class="thumb">
-            <img src="assets/img/gallery/1.png" alt="">
+            <img src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/gallery/1.png"
+              alt="">
           </div>
           <div class="gallery_hover">
             <div class="hover_inner d-flex align-items-center justify-content-between">
@@ -250,7 +265,8 @@
       <div class="col-xl-3 col-lg-3 col-md-6 grid-item cat3">
         <div class="single_gallery">
           <div class="thumb">
-            <img src="assets/img/gallery/2.png" alt="">
+            <img src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/gallery/2.png"
+              alt="">
           </div>
           <div class="gallery_hover">
             <div class="hover_inner d-flex align-items-center justify-content-between">
@@ -267,7 +283,8 @@
       <div class="col-xl-3 col-lg-3 col-md-6 grid-item cat2">
         <div class="single_gallery">
           <div class="thumb">
-            <img src="assets/img/gallery/3.png" alt="">
+            <img src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/gallery/3.png"
+              alt="">
           </div>
           <div class="gallery_hover">
             <div class="hover_inner d-flex align-items-center justify-content-between">
@@ -284,7 +301,8 @@
       <div class="col-xl-3 col-lg-3 col-md-6 grid-item cat1 cat3">
         <div class="single_gallery">
           <div class="thumb">
-            <img src="assets/img/gallery/4.png" alt="">
+            <img src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/gallery/4.png"
+              alt="">
           </div>
           <div class="gallery_hover">
             <div class="hover_inner d-flex align-items-center justify-content-between">
@@ -301,7 +319,8 @@
       <div class="col-xl-3 col-lg-3 col-md-6 grid-item cat2 cat3 cat4">
         <div class="single_gallery">
           <div class="thumb">
-            <img src="assets/img/gallery/5.png" alt="">
+            <img src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/gallery/5.png"
+              alt="">
           </div>
           <div class="gallery_hover">
             <div class="hover_inner d-flex align-items-center justify-content-between">
@@ -318,7 +337,8 @@
       <div class="col-xl-3 col-lg-3 col-md-6 grid-item cat1 cat2">
         <div class="single_gallery">
           <div class="thumb">
-            <img src="assets/img/gallery/6.png" alt="">
+            <img src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/gallery/6.png"
+              alt="">
           </div>
           <div class="gallery_hover">
             <div class="hover_inner d-flex align-items-center justify-content-between">
@@ -335,7 +355,8 @@
       <div class="col-xl-3 col-lg-3 col-md-6 grid-item cat4 cat1">
         <div class="single_gallery">
           <div class="thumb">
-            <img src="assets/img/gallery/7.png" alt="">
+            <img src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/gallery/7.png"
+              alt="">
           </div>
           <div class="gallery_hover">
             <div class="hover_inner d-flex align-items-center justify-content-between">
@@ -352,7 +373,8 @@
       <div class="col-xl-3 col-lg-3 col-md-6 grid-item cat1 cat2 cat3 cat4">
         <div class="single_gallery">
           <div class="thumb">
-            <img src="assets/img/gallery/8.png" alt="">
+            <img src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/gallery/8.png"
+              alt="">
           </div>
           <div class="gallery_hover">
             <div class="hover_inner d-flex align-items-center justify-content-between">
@@ -415,7 +437,9 @@
             <div class="single_testmonial text-center">
               <div class="testmonial_author">
                 <div class="thumb">
-                  <img src="assets/img/testimonial/1.png" alt="">
+                  <img
+                    src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/testimonial/1.png"
+                    alt="">
                 </div>
                 <h4>Jordan Adams</h4>
                 <span>Client</span>
@@ -428,7 +452,9 @@
             <div class="single_testmonial text-center">
               <div class="testmonial_author">
                 <div class="thumb">
-                  <img src="assets/img/testimonial/1.png" alt="">
+                  <img
+                    src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/testimonial/1.png"
+                    alt="">
                 </div>
                 <h4>Jordan Adams</h4>
                 <span>Client</span>
@@ -441,7 +467,9 @@
             <div class="single_testmonial text-center">
               <div class="testmonial_author">
                 <div class="thumb">
-                  <img src="assets/img/testimonial/1.png" alt="">
+                  <img
+                    src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/testimonial/1.png"
+                    alt="">
                 </div>
                 <h4>Jordan Adams</h4>
                 <span>Client</span>

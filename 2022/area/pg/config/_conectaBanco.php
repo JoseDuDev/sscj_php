@@ -55,7 +55,7 @@ function find( $table = null, $id = null ) {
 	
 	close_database($database);
 
-	return $row;
+	return $found;
 }
 
 function find_for( $table = null, $field = null, $id = null ) {

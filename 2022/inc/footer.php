@@ -9,13 +9,17 @@
           <div class="col-lg-6 col-md-6">
             <div class="footer_logo">
               <a href="#">
-                <img src="assets/img/footer_logo.png" alt="">
+                <img
+                  src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/footer_logo.png"
+                  alt="">
               </a>
             </div>
           </div>
           <div class="col-lg-6 col-md-6">
             <div class="download_btn">
-              <a href="#"> <img src="assets/img/icon/down.svg" alt=""> Download Brochure</a>
+              <a href="#"> <img
+                  src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/icon/down.svg"
+                  alt=""> Download Brochure</a>
             </div>
           </div>
         </div>

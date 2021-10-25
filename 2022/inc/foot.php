@@ -1,34 +1,34 @@
 <!-- JS here -->
-<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
-<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/isotope.pkgd.min.js"></script>
-<script src="assets/js/ajax-form.js"></script>
-<script src="assets/js/waypoints.min.js"></script>
-<script src="assets/js/jquery.counterup.min.js"></script>
-<script src="assets/js/imagesloaded.pkgd.min.js"></script>
-<script src="assets/js/scrollIt.js"></script>
-<script src="assets/js/jquery.scrollUp.min.js"></script>
-<script src="assets/js/wow.min.js"></script>
-<script src="assets/js/gijgo.min.js"></script>
-<script src="assets/js/nice-select.min.js"></script>
-<script src="assets/js/jquery.slicknav.min.js"></script>
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
-<script src="assets/js/plugins.js"></script>
+<script src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/js/popper.min.js"></script>
+<script src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/js/bootstrap.min.js"></script>
+<script src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/js/owl.carousel.min.js"></script>
+<script src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/js/isotope.pkgd.min.js"></script>
+<script src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/js/ajax-form.js"></script>
+<script src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/js/waypoints.min.js"></script>
+<script src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/js/jquery.counterup.min.js"></script>
+<script src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/js/scrollIt.js"></script>
+<script src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/js/jquery.scrollUp.min.js"></script>
+<script src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/js/wow.min.js"></script>
+<script src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/js/gijgo.min.js"></script>
+<script src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/js/nice-select.min.js"></script>
+<script src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/js/jquery.slicknav.min.js"></script>
+<script src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/js/jquery.magnific-popup.min.js"></script>
+<script src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/js/plugins.js"></script>
 
 
 
 <!--contact js-->
-<script src="assets/js/contact.js"></script>
-<script src="assets/js/jquery.ajaxchimp.min.js"></script>
-<script src="assets/js/jquery.form.js"></script>
-<script src="assets/js/jquery.validate.min.js"></script>
-<script src="assets/js/mail-script.js"></script>
+<script src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/js/contact.js"></script>
+<script src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/js/jquery.ajaxchimp.min.js"></script>
+<script src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/js/jquery.form.js"></script>
+<script src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/js/jquery.validate.min.js"></script>
+<script src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/js/mail-script.js"></script>
+<script src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/js/jquery-ui.min.js"></script>
 
-
-<script src="assets/js/main.js"></script>
+<script src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/js/main.js"></script>
 
 <!-- Modal -->
 <div class="modal fade custom_search_pop" id="exampleModalCenter" tabindex="-1" role="dialog"
@@ -42,20 +42,7 @@
     </div>
   </div>
 </div>
-<script>
-$('#datepicker').datepicker({
-  iconsLibrary: 'fontawesome',
-  icons: {
-    rightIcon: '<span class="fa fa-calendar-o"></span>'
-  }
-});
-$('#datepicker2').datepicker({
-  iconsLibrary: 'fontawesome',
-  icons: {
-    rightIcon: '<span class="fa fa-calendar-o"></span>'
-  }
-});
-</script>
+
 </body>
 
 </html>

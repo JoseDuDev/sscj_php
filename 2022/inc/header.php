@@ -24,7 +24,8 @@
           <div class="col-xl-3 col-lg-3">
             <div class="logo">
               <a href="index.html">
-                <img src="assets/img/logo.png" alt="">
+                <img src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/logo.png"
+                  alt="">
               </a>
             </div>
           </div>
@@ -32,7 +33,9 @@
             <div class="address_menu d-flex justify-content-end">
               <div class="single_address  d-flex">
                 <div class="icon">
-                  <img src="assets/img/icon/header-address.svg" alt="">
+                  <img
+                    src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/icon/header-address.svg"
+                    alt="">
                 </div>
                 <div class="address_info">
                   <h3>Address</h3>
@@ -41,7 +44,9 @@
               </div>
               <div class="single_address d-flex">
                 <div class="icon">
-                  <img src="assets/img/icon/headset.svg" alt="">
+                  <img
+                    src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/icon/headset.svg"
+                    alt="">
                 </div>
                 <div class="address_info">
                   <h3>Call Us</h3>
@@ -60,7 +65,9 @@
             <div class="col-12 d-lg-none">
               <div class="logo ">
                 <a href="#">
-                  <img src="assets/img/logo.png" alt="">
+                  <img
+                    src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/logo.png"
+                    alt="">
                 </a>
               </div>
             </div>

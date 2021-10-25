@@ -49,22 +49,33 @@ date_default_timezone_set('America/Sao_Paulo');
   <base href="https://<?php echo $GLOBALS['config']['url']; ?>/" target="_self">
 
   <!-- <link rel="manifest" href="site.webmanifest"> -->
-  <link rel="shortcut icon" type="image/x-icon"
-    href="https://<?php echo $GLOBALS['config']['url']; ?>/assets/img/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
   <!-- Place favicon.ico in the root directory -->
 
   <!-- CSS here -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/css/magnific-popup.css">
-  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/themify-icons.css">
-  <link rel="stylesheet" href="assets/css/gijgo.css">
-  <link rel="stylesheet" href="assets/css/nice-select.css">
-  <link rel="stylesheet" href="assets/css/flaticon.css">
-  <link rel="stylesheet" href="assets/css/slicknav.css">
+  <link rel="stylesheet"
+    href="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/css/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/css/magnific-popup.css">
+  <link rel="stylesheet"
+    href="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/css/font-awesome.min.css">
+  <link rel="stylesheet"
+    href="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/css/themify-icons.css">
+  <link rel="stylesheet"
+    href="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/css/gijgo.css">
+  <link rel="stylesheet"
+    href="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/css/nice-select.css">
+  <link rel="stylesheet"
+    href="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/css/flaticon.css">
+  <link rel="stylesheet"
+    href="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/css/slicknav.css">
 
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet"
+    href="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/css/style.css">
+  <link rel="stylesheet"
+    href="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/css/jquery-ui.min.css">
   <!-- <link rel="stylesheet" href="assets/css/responsive.css"> -->
 </head>
 
