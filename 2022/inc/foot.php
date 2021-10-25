@@ -54,7 +54,6 @@ $('#datepicker2').datepicker({
   icons: {
     rightIcon: '<span class="fa fa-calendar-o"></span>'
   }
-
 });
 </script>
 </body>

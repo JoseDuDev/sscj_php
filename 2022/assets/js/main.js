@@ -5,7 +5,9 @@ $("#delete-modal").on("show.bs.modal", function (event) {
   var modal = $(this);
   modal.find(".modal-title").text("Excluir pastoral #" + id);
   modal.find("#confirm").attr("href", "delete.php?id=" + id);
-})(function ($) {
+});
+
+(function ($) {
   "use strict";
   // TOP Menu Sticky
   $(window).on("scroll", function () {

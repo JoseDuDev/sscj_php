@@ -1,3 +1,5 @@
+</body>
+
 <!-- footer_start  -->
 <footer class="footer">
   <div class="download_brochure">
