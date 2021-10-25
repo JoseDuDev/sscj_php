@@ -24,5 +24,7 @@ if ( !defined('BASEURL') )
 if ( !defined('DBAPI') )
 	define('DBAPI', ABSPATH . 'inc/database.php');
 
+define('HEAD_TEMPLATE', ABSPATH . 'inc/head.php');
 define('HEADER_TEMPLATE', ABSPATH . 'inc/header.php');
+define('FOOT_TEMPLATE', ABSPATH . 'inc/foot.php');
 define('FOOTER_TEMPLATE', ABSPATH . 'inc/footer.php');
