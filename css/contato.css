@@ -1,0 +1,34 @@
+/* CONTATO */
+.area_contato { width: 980px; height: auto; margin: 0 auto; padding: 15px 0px; }
+.area_contato p { font-size: 14px; text-align: justify; color: #737373; margin: 40px 0px 40px 0px; }
+.area_contato .topico { font-size: 14px; text-align: justify; color: #737373; margin: 20px 0px 20px 0px; }
+
+#mapa { width:990px; margin: 0 auto; height:420px; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; }
+
+.area-formulario { background-color: #d6d6d6; width: 940px; height: 340px; padding: 20px; }
+.area-formulario p { margin: 10px 0px; padding: 0px; text-align: left; }
+.area-formulario p input[type=text], textarea { width: 935px; height: 22px; padding: 3px; text-align: left; font-size: 13px; color: #777777; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+.area-formulario p .btc { position: absolute; left: 50%; margin-left: 425px; top: 940px; cursor: pointer; background-color: #d7d7d7; color: #737373; font-size: 11px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; padding: 6px 10px; box-shadow: 2px 2px 2px #888; }
+
+.missas { width: 970px; height: auto; list-style-type: none; }
+.missas li { width: 965px; height: 40px; float: left; }
+.missas li .dia { background-color: #d6d6d6; color: #737373; padding: 10px; text-align: left; width: 100px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; float: left; }
+.missas li .horario { margin-left: 20px; line-height: 34px; color: #777777; text-align: left; }
+
+.veavisos { width: 970px; height: auto; list-style-type: none; }
+.veavisos li { width: 965px; height: 40px; float: left; }
+.veavisos li .dia { background-color: #d6d6d6; color: #737373; padding: 10px; text-align: left; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; float: left; }
+.veavisos li .horario { margin-left: 20px; line-height: 34px; color: #777777; text-align: left; }
+
+.meia1 { width: 450px; height: auto; float: left }
+.meia2 { width: 450px; height: auto; float: right }
+
+.divisa { width: 980px; height: 3px; background-color: #641a19; margin: 0 auto; margin: 0px 0px 30px 0px; }
+
+.missas { width: 980px; height: auto; float: left }
+
+.entrada { width: 100px; height: auto; vertical-align: middle; padding: 10px; text-align: center; float: left; background-color: #d6d6d6; color: #777777; font-weight: bold; margin-right: 10px; margin-bottom: 10px; }
+
+.vemais { width: 410px; height: auto; }
+.vemais .listagem { width: 280px; height: auto; float: left; list-style-type: none; }
+.vemais .listagem li { float: left; height: 14px; width: 252px; padding: 8px 10px; text-align: left; background-color: #d6d6d6; color: #777777; }

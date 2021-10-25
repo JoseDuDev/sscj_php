@@ -1,0 +1,8 @@
+[06-Feb-2014 23:58:52 America/Sao_Paulo] PHP Warning:  session_start(): open(/tmp/sess_96097412664635c0d09589a14f0e84ff, O_RDWR) failed: No space left on device (28) in /home/scj/public_html/pg/config/popup.php on line 2
+[06-Feb-2014 23:58:52 America/Sao_Paulo] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/scj/public_html/pg/config/popup.php:2) in /home/scj/public_html/pg/config/popup.php on line 2
+[06-Feb-2014 23:58:52 America/Sao_Paulo] PHP Warning:  Unknown: open(/tmp/sess_96097412664635c0d09589a14f0e84ff, O_RDWR) failed: No space left on device (28) in Unknown on line 0
+[06-Feb-2014 23:58:52 America/Sao_Paulo] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[06-Feb-2014 23:58:56 America/Sao_Paulo] PHP Warning:  session_start(): open(/tmp/sess_96097412664635c0d09589a14f0e84ff, O_RDWR) failed: No space left on device (28) in /home/scj/public_html/pg/config/popup.php on line 2
+[06-Feb-2014 23:58:56 America/Sao_Paulo] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/scj/public_html/pg/config/popup.php:2) in /home/scj/public_html/pg/config/popup.php on line 2
+[06-Feb-2014 23:58:56 America/Sao_Paulo] PHP Warning:  Unknown: open(/tmp/sess_96097412664635c0d09589a14f0e84ff, O_RDWR) failed: No space left on device (28) in Unknown on line 0
+[06-Feb-2014 23:58:56 America/Sao_Paulo] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0

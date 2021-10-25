@@ -1,0 +1,11 @@
+/* INSTITUCIONAL */
+.area_empresa { width: 980px; height: auto; margin: 0 auto; padding: 15px 0px; }
+.area_empresa p { font-size: 14px; text-align: justify; color: #737373; margin: 50px 0px 40px 0px; }
+
+.list_carousel { margin: 0 auto; width: 970px; }
+.list_carousel ul { margin: 40px 0px; padding: 0; list-style: none; display: block; background-color: #480001; }
+.list_carousel li { width: 172px; height: 145px; padding: 0; margin: 11px; display: block; float: left; }
+.list_carousel li img { width: 172px; height: 145px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+.clearfix { float: none; clear: both; }
+.prev { position: absolute; left:50%; margin-left: -506px; margin-top: -145px; width: 21px; height: 42px; background: url(../img/prev-next.png) no-repeat left top; }
+.next { position: absolute; left:50%; margin-left: 484px; margin-top: -145px; width: 21px; height: 42px; background: url(../img/prev-next.png) no-repeat right top; }

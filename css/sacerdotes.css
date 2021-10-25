@@ -1,0 +1,16 @@
+/* SACERDOTES */
+.area_sacerdotes { width: 980px; height: auto; margin: 0 auto; padding: 15px 0px; }
+.area_sacerdotes p { font-size: 14px; text-align: justify; color: #737373; margin: 50px 0px 40px 0px; }
+
+.itens_sacerdotes { width: 980px; height: auto; margin: 0 auto; list-style-type: none; }
+.itens_sacerdotes li { width: 980px; height: 170px; float: left; margin: 6px 0px; }
+.itens_sacerdotes li .image { width: 160px; height: 170px; margin-right: 4px; float: left; }
+.itens_sacerdotes li .info { width: 785px; font-size: 16px; text-align: left; line-height: 25px; padding: 15px; color: #777777; font-weight: bold; height: 140px; float: left; background: #d6d6d6 url(../img/vmais.png) no-repeat 725px 135px; }
+.itens_sacerdotes li .info div { font-size: 13px; color: #777777; font-weight: normal; line-height: 18px; text-align: justify; }
+
+.item_sacerdotes { width: 980px; height: auto; margin: 0 auto; list-style-type: none; }
+.item_sacerdotes li { width: 980px; height: auto; float: left; margin: 6px 0px; }
+.item_sacerdotes li .voltar { width: 32px; height: 32px; margin-left: 480px; position: absolute; left: 50%; }
+.item_sacerdotes li .image { width: 360px; height: auto; margin-right: 4px; float: left; padding-top: 15px; }
+.item_sacerdotes li .info { width: 585px; font-size: 16px; text-align: left; line-height: 50px; padding: 0px 15px 15px 15px; color: #777777; font-weight: bold; height: auto; float: left; }
+.item_sacerdotes li .info div { font-size: 13px; color: #777777; font-weight: normal; line-height: 20px; text-align: justify; }

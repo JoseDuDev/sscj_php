@@ -1,0 +1,32 @@
+[10-Nov-2013 17:37:22 America/Sao_Paulo] PHP Warning:  file_get_contents(http://...@@libes@santuarioscj.com.br:2082/awstats.pl?config=santuarioscj.com.br&amp;lang=pt) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 401 Access Denied
+ in /home/scj/public_html/stats/index.php on line 14
+[25-Feb-2014 23:05:06 America/Sao_Paulo] PHP Warning:  file_get_contents(http://...@@libes@santuarioscj.com.br:2082/awstats.pl?config=santuarioscj.com.br&amp;lang=pt): failed to open stream: HTTP request failed! HTTP/1.1 401 Access Denied
+ in /home/scj/public_html/stats/index.php on line 14
+[13-Aug-2014 09:27:32 America/Sao_Paulo] PHP Warning:  file_get_contents(http://...@@libes@santuarioscj.com.br:2082/awstats.pl?config=santuarioscj.com.br&amp;lang=pt): failed to open stream: HTTP request failed! HTTP/1.1 401 Access Denied
+ in /home/scj/public_html/stats/index.php on line 14
+[03-Feb-2015 23:09:16 America/Sao_Paulo] PHP Warning:  file_get_contents(http://...@@libes@santuarioscj.com.br:2082/awstats.pl?config=santuarioscj.com.br&amp;lang=pt): failed to open stream: HTTP request failed! HTTP/1.1 401 Access Denied
+ in /home/scj/public_html/stats/index.php on line 14
+[03-Feb-2015 23:09:22 America/Sao_Paulo] PHP Warning:  file_get_contents(http://...@@libes@santuarioscj.com.br:2082/awstats.pl?config=santuarioscj.com.br&amp;lang=pt): failed to open stream: HTTP request failed! HTTP/1.1 401 Access Denied
+ in /home/scj/public_html/stats/index.php on line 14
+[24-May-2015 23:42:35 America/Sao_Paulo] PHP Warning:  file_get_contents(http://...@@libes@santuarioscj.com.br:2082/awstats.pl?config=santuarioscj.com.br&amp;lang=pt): failed to open stream: HTTP request failed! HTTP/1.1 401 Access Denied
+ in /home/scj/public_html/stats/index.php on line 14
+[06-Jan-2016 17:44:47 America/Sao_Paulo] PHP Warning:  file_get_contents(http://...@@libes@santuarioscj.com.br:2082/awstats.pl?config=santuarioscj.com.br&amp;lang=pt): failed to open stream: HTTP request failed! HTTP/1.1 401 Access Denied
+ in /home/scj/public_html/stats/index.php on line 14
+[03-Aug-2016 10:27:37 America/Sao_Paulo] PHP Warning:  file_get_contents(http://...@@libes@santuarioscj.com.br:2082/awstats.pl?config=santuarioscj.com.br&amp;lang=pt): failed to open stream: HTTP request failed! HTTP/1.0 401 Access Denied
+ in /home/scj/public_html/stats/index.php on line 14
+[03-Aug-2016 10:27:44 America/Sao_Paulo] PHP Warning:  file_get_contents(http://...@@libes@santuarioscj.com.br:2082/awstats.pl?config=santuarioscj.com.br&amp;lang=pt): failed to open stream: HTTP request failed! HTTP/1.0 401 Access Denied
+ in /home/scj/public_html/stats/index.php on line 14
+[14-Sep-2016 21:15:54 America/Sao_Paulo] PHP Warning:  file_get_contents(http://...@@libes@santuarioscj.com.br:2082/awstats.pl?config=santuarioscj.com.br&amp;lang=pt): failed to open stream: HTTP request failed! HTTP/1.0 401 Access Denied
+ in /home/scj/public_html/stats/index.php on line 14
+[14-Sep-2016 21:16:08 America/Sao_Paulo] PHP Warning:  file_get_contents(http://...@@libes@santuarioscj.com.br:2082/awstats.pl?config=santuarioscj.com.br&amp;lang=pt): failed to open stream: HTTP request failed! HTTP/1.0 401 Access Denied
+ in /home/scj/public_html/stats/index.php on line 14
+[14-Sep-2016 21:16:11 America/Sao_Paulo] PHP Warning:  file_get_contents(http://...@@libes@santuarioscj.com.br:2082/awstats.pl?config=santuarioscj.com.br&amp;lang=pt): failed to open stream: HTTP request failed! HTTP/1.0 401 Access Denied
+ in /home/scj/public_html/stats/index.php on line 14
+[14-Sep-2016 21:16:23 America/Sao_Paulo] PHP Warning:  file_get_contents(http://...@@libes@santuarioscj.com.br:2082/awstats.pl?config=santuarioscj.com.br&amp;lang=pt): failed to open stream: HTTP request failed! HTTP/1.0 401 Access Denied
+ in /home/scj/public_html/stats/index.php on line 14
+[26-Sep-2018 09:33:43 America/Sao_Paulo] PHP Warning:  file_get_contents(http://...@@libes@santuarioscj.com.br:2082/awstats.pl?config=santuarioscj.com.br&amp;lang=pt): failed to open stream: HTTP request failed! HTTP/1.0 401 Access Denied
+ in /home/scj/public_html/stats/index.php on line 14
+[05-Jul-2020 03:20:55 UTC] PHP Warning:  file_get_contents(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/scj/public_html/stats/index.php on line 14
+[05-Jul-2020 03:20:55 UTC] PHP Warning:  file_get_contents(http://...@@libes@santuarioscj.com.br:2082/awstats.pl?config=santuarioscj.com.br&amp;lang=pt): failed to open stream: no suitable wrapper could be found in /home/scj/public_html/stats/index.php on line 14
+[08-Jul-2020 11:14:56 UTC] PHP Warning:  file_get_contents(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/scj/public_html/stats/index.php on line 14
+[08-Jul-2020 11:14:56 UTC] PHP Warning:  file_get_contents(http://...@@libes@santuarioscj.com.br:2082/awstats.pl?config=santuarioscj.com.br&amp;lang=pt): failed to open stream: no suitable wrapper could be found in /home/scj/public_html/stats/index.php on line 14

@@ -1,0 +1,65 @@
+/* HOME */
+.banner_corpo { width: 100%; height: 650px; padding-top: 10px; border-top: #cc1b1b 4px solid; }
+.linhab { position:absolute; width: 100%; background-color: #cc1b1b; height:4px; top: 962px; left: 0; z-index:50; }
+.slider { width:100%; height:650px; position:absolute; z-index:40; background-color: #490000; }
+.sliderContent { width:100%; height:600px; clear:both; position:relative; overflow:hidden; float: left; }
+.sliderContent .item { width:100%; height:600px; position: absolute; left: 50%; }
+.sliderBullets { position:absolute; width: 1024px; height:13px; top: 624px; left: 50%; margin-left: -512px; z-index:50; float: right; }
+.sliderBullets a { display:block; float:right; text-indent:-9999px; outline:none; width:32px; height:13px; margin-left: 6px; background:url(../img/bullets.png) no-repeat; }
+.sliderBullets .active { background-position: -32px 0px; }
+
+.slider2 { width:990px; height:163px; position:absolute; z-index:40; background-color: #ffffff; }
+.sliderContent2 { width:990px; height:163px; clear:both; position:relative; overflow:hidden; float: left; }
+.sliderContent2 .item { width:990px; height:163px; position: absolute; left: 0; }
+
+.area_icones { width: 100%; height: 285px; background:#490000 url(../img/bg-icones.png) repeat-x; }
+.icones { width: 990px; margin: 0 auto; list-style-type: none; padding-top: 34px; }
+.icones li.horario { width: 328px; height: 100px; float: left; background:url(../img/sprite-icones-corpo.png) repeat-y 0px 0px; }
+.icones li.liturgia { width: 328px; height: 100px; float: left; background: url(../img/sprite-icones-corpo.png) repeat-y -320px 0px; }
+.icones li.santo { width: 328px; height: 100px; float: left; background: url(../img/sprite-icones-corpo.png) repeat-y -640px 0px; }
+.icones li.pedidos { width: 328px; height: 100px; float: left; background:url(../img/sprite-icones-corpo.png) no-repeat 0px -100px; }
+.icones li.intencao { width: 328px; height: 100px; float: left; background: url(../img/sprite-icones-corpo.png) no-repeat -320px -100px; }
+.icones li.jonline { width: 328px; height: 100px; float: left; background: url(../img/sprite-icones-corpo.png) no-repeat -640px -100px; }
+
+.area_agenda { width:490px; height: 160px; float: left; background: url(../img/bg-agenda.png); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; margin-top: 30px; }
+.area_agenda p { font-size: 15px; line-height: 45px; font-weight: bold; font-family: 'Arial'; color: #ffffff; text-align: center; border-bottom: #690000 2px solid; }
+.area_agenda .list_carousel { margin: 0 auto; width: 325px; }
+.area_agenda .list_carousel ul { margin: 0; padding: 0; list-style: none; display: block; }
+.area_agenda .list_carousel li { font-size: 20px; color: #ffffff; text-align: left; width: 325px; height: 100px; font-family: 'Arial'; line-height: 25px; padding-top: 20px; margin: 6px 6px 3px 6px; display: block; float: left; }
+.area_agenda .list_carousel li div { color: #ffffff; font-size: 13px; font-weight: bold; text-align: left; }
+.area_agenda .clearfix { float: none; clear: both; }
+.area_agenda .prev { width:64px; height: 90px; background: url(../img/sprite-pn.png) no-repeat 0px 0px; position: absolute; left: 50%; margin-left: -500px; margin-top: -115px; }
+.area_agenda .prev:hover { background: url(../img/sprite-pn.png) no-repeat 0px -90px; }
+.area_agenda .next { width:64px; height: 90px; background: url(../img/sprite-pn.png) no-repeat -64px 0px; position: absolute; left: 50%; margin-left: -100px; margin-top: -115px; }
+.area_agenda .next:hover { background: url(../img/sprite-pn.png) no-repeat -64px -90px; }
+
+.area_fotos { width:490px; height: 555px; float: left; margin-top: 25px; border-top: #980b0e 4px solid; border-bottom: #980b0e 4px solid; padding-top: 22px; }
+.area_fotos .slider-wrap { width:488px; background-color: #d7d7d7; margin-top: 70px; padding-top: 20px; }			
+.area_fotos .stripViewer .panelContainer 
+.area_fotos .panel ul { text-align: left; margin: 0 15px 0 30px; }
+.area_fotos .stripViewer { position: relative; overflow: hidden; width:488px; height: 350px; }
+.area_fotos .stripViewer .panelContainer { position: relative; left: 0; top: 0; }
+.area_fotos .stripViewer .panelContainer .panel	{ float: left; height: 100%; position: relative; width:488px; }
+.area_fotos .stripNavL, .stripNavR, .stripNav { display: none; }
+.area_fotos .nav-thumb { margin-right: 3px; }
+.area_fotos #movers-row	{ margin: -92px 0 0 117px; }
+.area_fotos #movers-row div	{ width: 90px; float: left; }
+.area_fotos #movers-row div a.cross-link { float: right; }
+.area_fotos .photo-meta-data { width: 430px; background: url(../img/mask.png); text-align: left; padding: 17px 10px; font-size: 14px; height: 20px; margin-top: -56px; margin-left: 19px; position: relative; z-index: 9999; color: white; }
+.area_fotos .cross-link	{ display: block; width: 100px; margin-top: -16px; position: relative; padding: 18px 0px 20px 16px; z-index: 9999; opacity:0.50; -moz-opacity: 0.50; filter: alpha(opacity=50); }
+.area_fotos .active-thumb  { opacity:1.0; -moz-opacity: 1.0; filter: alpha(opacity=100); }
+
+.area_noticias { width: 490px; height: auto; float: right; margin-top: 35px; }
+.area_noticias p { width: 490px; float: right; }
+.area_noticias ul { float: right; list-style-type: none; width: 490px; margin-top: 20px; }
+.area_noticias ul li { width: 460px; height: 190px; background: #ebebeb url(../img/vmais.png) no-repeat 400px 192px; margin-bottom: 4px; padding: 25px 15px 15px 15px; }
+.area_noticias ul li .topico { width: 365px; background-color: #cccccc; font-size: 20px; color: #4c4c4c; font-family: 'Arial'; text-align: left; letter-spacing: -1px; padding: 18px 15px 18px 64px; }
+.area_noticias ul li .topico .vdata { width: 60px; height: 87px; margin: -28px 0px 0px -68px; position: absolute; background:url(../img/sprite-icones.png) no-repeat -130px -40px; font-family: 'Arial'; font-size: 36px; line-height: 30px; letter-spacing: -3px; text-align: center; color: #750000; padding-top: 10px; }
+.area_noticias ul li .topico .vdata div { font-size: 18px; letter-spacing: -1px; text-transform: uppercase; }
+.area_noticias ul li .image { width: 150px; height: 100px; float: left; padding: 25px 0px 15px 0px; }
+.area_noticias ul li .image img { width: 150px; height: 100px; }
+.area_noticias ul li .contexto { width: 293px; height: 100px; color: #4c4c4c; float: right; text-align: justify; font-size: 11px; padding: 22px 0px 15px 0px; }
+
+.area_patrocinio { width: 1024px; height: auto; float: left; margin: 35px 0px 100px 0px; }
+.area_patrocinio .image_carousel { padding: 15px 18px; height: 164px; background-color: #ffffff; }
+.area_patrocinio .clearfix { float: none; clear: both; }

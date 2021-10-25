@@ -1,0 +1,13 @@
+/* FOTOS */
+.area_fotos { width: 980px; height: auto; margin: 0 auto; padding: 15px 0px; }
+.area_fotos p { font-size: 14px; text-align: justify; color: #737373; margin: 40px 0px 40px 0px; }
+
+.area_fotos .albuns { width: 980px; height: auto; list-style-type: none; margin: 20px 0px 0px 0px; }
+.area_fotos .albuns li { width: 300px; height: 310px; color: #777777; font-size: 13px; margin: 13px; float: left; background-color: #bcbcbc; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+.area_fotos .albuns li img { padding: 10px; }
+.area_fotos .albuns li .info { width: 280px; height: 30px; background-color: #d6d6d6; text-align: left; padding: 10px; }
+
+.area_fotos .vefotos { width: 980px; height: auto; list-style-type: none; margin: 40px 0px 0px 0px; }
+.area_fotos .vefotos li { width: 300px; height: 250px; color: #777777; font-size: 13px; margin: 13px; float: left; }
+.area_fotos .vefotos li .info { position: absolute; margin-top: -250px; font-weight: bold; width: 280px; background: url(../img/mask.png); color:#ffffff; text-align: left; padding: 10px; }
+.area_fotos .voltar { width: 32px; height: 32px; margin-left: 480px; position: absolute; left: 50%; }

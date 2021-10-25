@@ -1,0 +1,35 @@
+/* COMUNIDADES */
+.area_comunidades { width: 980px; height: auto; margin: 0 auto; padding: 15px 0px; }
+.area_comunidades p { font-size: 14px; text-align: justify; color: #737373; margin: 50px 0px 40px 0px; }
+
+.itens_comunidades { width: 980px; height: auto; margin: 0 auto; list-style-type: none; }
+.itens_comunidades li { width: 980px; height: 170px; float: left; margin: 6px 0px; }
+.itens_comunidades li .cors { width: 5px; height: 170px; float: left;}
+.itens_comunidades li .image { width: 160px; height: 170px; margin: 0px 4px; float: left; }
+.itens_comunidades li .info { width: 774px; font-size: 16px; text-align: left; line-height: 25px; padding: 15px; color: #777777; font-weight: bold; height: 140px; float: right; background: #d6d6d6 url(../img/vmais.png) no-repeat 720px 135px; }
+.itens_comunidades li .info div { font-size: 13px; color: #777777; font-weight: normal; line-height: 18px; text-align: justify; }
+.itens_comunidades li .info div.sub { padding: 4px 0px; font-weight: normal; font-size: 11px; }
+
+.barra { width: 535px; height: 3px; margin: 10px 0px; }
+.maisn { margin: 10px 0px; padding: 10px 16px; font-size: 12px; color: #ffffff; font-weight: bold; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+
+.item_comunidades { width: 980px; height: auto; margin: 0 auto; list-style-type: none; }
+.item_comunidades li { width: 980px; height: auto; float: left; margin: 6px 0px; }
+.item_comunidades li .voltar { width: 32px; height: 32px; margin-left: 480px; position: absolute; left: 50%; }
+.item_comunidades li .image { width: 410px; height: auto; margin-right: 4px; float: left; padding-top: 15px; }
+.item_comunidades li .info { width: 535px; font-size: 16px; text-align: left; line-height: 50px; padding: 0px 15px 15px 15px; color: #777777; font-weight: bold; height: auto; float: left; }
+.item_comunidades li .info div { font-size: 13px; color: #777777; font-weight: normal; line-height: 20px; text-align: justify; }
+
+.entrada { width: 100px; height: auto; vertical-align: middle; padding: 10px; text-align: center; float: left; background-color: #d6d6d6; color: #777777; font-weight: bold; margin-right: 10px; margin-bottom: 10px; }
+
+.vhorarios { width: 410px; height: auto; float: left; margin-top: 20px; margin-left: 25px; }
+.vhorarios .vemais { width: 410px; height: auto; }
+.vhorarios .vemais .listagem { width: 280px; height: auto; float: left; list-style-type: none; }
+.vhorarios .vemais .listagem li { float: left;width: 252px; padding: 8px 10px; text-align: left; background-color: #d6d6d6; color: #777777; }
+
+.vnoticias { width: 570px; height: auto; float: right; margin-top: 20px; }
+.vnoticias ul li { width: 515px; height: 115px; background: #d6d6d6 url(../img/vmais.png) no-repeat 455px 95px; margin-bottom: 20px; padding: 0px 15px 15px 15px; }
+.vnoticias ul li .image { width: 130px; height: 100px; float: left; padding: 15px 0px 15px 0px; }
+.vnoticias ul li .image img { width: 130px; height: 100px; }
+.vnoticias ul li .contexto { width: 370px; height: 100px; color: #4c4c4c; float: right; text-align: justify; font-size: 11px; padding: 7px 0px 15px 0px; }
+.vnoticias ul li .contexto .top { font-size: 18px; color: #4c4c4c; font-family: 'Arial'; text-align: left; letter-spacing: -1px; padding: 6px 0px; }

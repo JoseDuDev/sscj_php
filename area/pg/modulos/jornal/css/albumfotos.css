@@ -1,0 +1,111 @@
+.form_painel { padding: 15px; }
+.form_painel .botoes { margin: 30px; text-align: left; }
+
+.form_painel .botoes a { padding: 8px 15px; background-color: #f47728; cursor: pointer; color: #ffffff; text-transform: uppercase; font-size: 14px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; display: inline-block; }
+.form_painel .botoes a:hover { background-color: #1f1c1d; }
+.form_painel .botoes a.rem { padding: 8px 15px; background-color: #998888; cursor: pointer; color: #ffffff; text-transform: uppercase; font-size: 14px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; display: inline-block; }
+.form_painel .botoes a.rem:hover { background-color: #1f1c1d; }
+
+/* ------------------ */
+/*   LISTA DE FOTOS   */
+/* ------------------ */
+
+.form_painel .lista_holder .lista_fotos {
+	list-style-type: none;
+	
+	margin: 0px;
+	padding: 0px;
+}
+
+.li_foto {
+	float: left;
+	
+	margin: 7px 15px;
+	
+	width: 201px;
+	height: 260px;
+}
+
+.foto-box {
+	width: 201px;
+	height: 245px;
+	
+	padding: 2px;
+	
+	border: 1px solid #bbbbbb;
+	background: #FFFFFF;
+}
+
+.foto-box:hover {
+	border: 1px solid #8c8c8c;
+}
+
+.foto-photo {
+	position: relative;
+	
+	width: 200px;
+	height: 200px;
+	
+	margin-bottom: 2px;
+}
+
+.foto-config {
+	width: 194px;
+	height: 30px;
+}
+
+.foto-config-buttons {
+	line-height: 40px;
+	width: 200px;
+	
+	padding-top: 10px;
+	
+	text-align: center;
+}
+
+.rd-capa {
+	position: absolute;
+	
+	margin: 0px;
+	padding: 0px;
+	
+	top: 1px;
+	left: 1px;
+}
+
+.foto-config-form {
+	width: 190px;
+	height: 80px;
+	padding: 5px 2px;
+}
+
+.f_album {
+	height: 90px;
+}
+
+.f_album .campo-texto { border: 1px solid #000000; padding: 8px; }
+.f_album .botao-album-ok {
+	background-color: #F47728;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px 5px 5px 0px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+.f_album .botao-album-ok:hover {
+	background-color: #000000;
+}
+
+.f_album .botao-album {
+	background-color: #998888;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px 5px 5px 0px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+
