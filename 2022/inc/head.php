@@ -49,7 +49,8 @@ date_default_timezone_set('America/Sao_Paulo');
   <base href="https://<?php echo $GLOBALS['config']['url']; ?>/" target="_self">
 
   <!-- <link rel="manifest" href="site.webmanifest"> -->
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+  <link rel="shortcut icon" type="image/x-icon"
+    href="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/favicon.ico">
   <!-- Place favicon.ico in the root directory -->
 
   <!-- CSS here -->
@@ -76,6 +77,13 @@ date_default_timezone_set('America/Sao_Paulo');
     href="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/css/style.css">
   <link rel="stylesheet"
     href="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/css/jquery-ui.min.css">
+
+  <link href="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/css/fontawesome.css"
+    rel="stylesheet">
+  <link href="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/css/brands.css"
+    rel="stylesheet">
+  <link href="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/css/solid.css"
+    rel="stylesheet">
   <!-- <link rel="stylesheet" href="assets/css/responsive.css"> -->
 </head>
 

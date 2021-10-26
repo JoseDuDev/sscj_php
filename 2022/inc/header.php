@@ -6,14 +6,15 @@
         <div class="row align-items-center">
           <div class="col-xl-5 col-md-5 ">
             <div class="header_left">
-              <p>Opening Hour: (10.00-07.00)</p>
+              <p><i class="fas fa-map-marker-alt"></i> <?php echo $GLOBALS['config']['endereco']; ?></p>
             </div>
           </div>
           <div class="col-xl-7 col-md-7">
-            <div class="header_right d-flex justify-content-end">
-              <a href="#" class="boxed-btn3">Get a Quote</a>
+            <div class="header_right">
+              <span><i class="fas fa-phone-alt"></i> <?php echo $GLOBALS['config']['telefone1']; ?></span>
+              <span><i class="fas fa-phone-alt"></i> <?php echo $GLOBALS['config']['telefone2']; ?> </span>
+              <span><i class="fab fa-whatsapp"></i> <?php echo $GLOBALS['config']['celular']; ?></span>
             </div>
-
           </div>
         </div>
       </div>
