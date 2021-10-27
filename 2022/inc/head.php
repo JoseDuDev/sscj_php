@@ -76,6 +76,8 @@ date_default_timezone_set('America/Sao_Paulo');
   <link rel="stylesheet"
     href="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/css/style.css">
   <link rel="stylesheet"
+    href="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/css/scj.css">
+  <link rel="stylesheet"
     href="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/css/jquery-ui.min.css">
 
   <link href="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/css/fontawesome.css"

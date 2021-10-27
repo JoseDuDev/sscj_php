@@ -5,57 +5,38 @@
 <?php include(HEADER_TEMPLATE); ?>
 <?php $db = open_database(); ?>
 
-
 <?php if ($db) : ?>
 
+<?php
+$banners = null;
+$banner = null;
+
+// $banners=find_query("SELECT empresa, site, img FROM banner WHERE status='S' AND local='principal' ORDER BY id_o DESC");
+$result = mysqli_query($db, "SELECT empresa, site, img FROM banner WHERE status='S' AND local='principal' ORDER BY id_o DESC");
+?>
 
 <!-- slider_area_start -->
+<?php if ($result) : ?>
 <div class="slider_area">
   <div class="slider_active owl-carousel">
-    <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
+    <?php while($record = mysqli_fetch_array($result)){ ?>
+    <div class="single_slider  d-flex align-items-center overlay" style="background-image: url("
+      <?php echo "https://" . utf8_encode($GLOBALS['config']['url']) . "/" . str_replace("", "/", $record['img']); ?>")>
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-xl-9 col-md-9 col-md-12">
             <div class="slider_text text-center">
-              <h3>We Build Your Home
-                Secure and Safe</h3>
-              <p>Build Your Home Secure and Safe with Professional Touch</p>
-              <a href="services.html" class="boxed-btn3">Our Services</a>
+              <h3><?php echo utf8_encode($record['empresa']); ?></h3>
+              <a href="<?php echo $record['site']; ?>" class="boxed-btn3">Our Services</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="single_slider  d-flex align-items-center slider_bg_2 overlay">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-xl-9 col-md-9 col-md-12">
-            <div class="slider_text text-center">
-              <h3>We Build Your Home
-                Secure and Safe</h3>
-              <p>Build Your Home Secure and Safe with Professional Touch</p>
-              <a href="services.html" class="boxed-btn3">Our Services</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-xl-9 col-md-9 col-md-12">
-            <div class="slider_text text-center">
-              <h3>We Build Your Home
-                Secure and Safe</h3>
-              <p>Build Your Home Secure and Safe with Professional Touch</p>
-              <a href="services.html" class="boxed-btn3">Our Services</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <?php } ?>
   </div>
 </div>
+<?php endif; ?>
 <!-- slider_area_end -->
 
 <!-- features_area_start -->

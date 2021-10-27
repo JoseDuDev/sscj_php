@@ -13,7 +13,13 @@
             <div class="header_right">
               <span><i class="fas fa-phone-alt"></i> <?php echo $GLOBALS['config']['telefone1']; ?></span>
               <span><i class="fas fa-phone-alt"></i> <?php echo $GLOBALS['config']['telefone2']; ?> </span>
-              <span><i class="fab fa-whatsapp"></i> <?php echo $GLOBALS['config']['celular']; ?></span>
+              <span>
+                <i class="fab fa-whatsapp"></i>
+                <a target="blank"
+                  href="https://api.whatsapp.com/send?phone=5547<?php echo str_replace("-", "", $GLOBALS['config']['celular']); ?>&text=Ol%C3%A1%20Santu%C3%A1rio%20SCJ!">
+                  <?php echo $GLOBALS['config']['celular']; ?>
+                </a>
+              </span>
             </div>
           </div>
         </div>
@@ -22,15 +28,16 @@
     <div class="address_bar d-none d-lg-block">
       <div class="container">
         <div class="row justify-content-between align-items-center">
-          <div class="col-xl-3 col-lg-3">
+          <div class="col-xl-4 col-lg-3">
             <div class="logo">
               <a href="index.html">
-                <img src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/logo.png"
-                  alt="">
+                <img class="img-fluid"
+                  src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/logob.png"
+                  alt="<?php echo $_SESSION['titulo_atual']; ?>">
               </a>
             </div>
           </div>
-          <div class="col-lg-9">
+          <div class="col-xl-8 col-lg-9">
             <div class="address_menu d-flex justify-content-end">
               <div class="single_address  d-flex">
                 <div class="icon">
@@ -67,7 +74,7 @@
               <div class="logo ">
                 <a href="#">
                   <img
-                    src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/logo.png"
+                    src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/logob.png"
                     alt="">
                 </a>
               </div>
@@ -76,23 +83,38 @@
               <div class="main-menu  d-none d-lg-block">
                 <nav>
                   <ul id="navigation">
-                    <li><a href="index.html">home</a></li>
-                    <li><a class="active" href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="#">pages <i class="ti-angle-down"></i></a>
+                    <li>Institucional <i class="ti-angle-down"></i>
                       <ul class="submenu">
-                        <li><a href="<?php echo BASEURL; ?>project.html">project</a></li>
-                        <li><a href="<?php echo BASEURL; ?>elements.html">elements</a></li>
-                        <li><a href="<?php echo BASEURL; ?>project_details.html">project details</a></li>
+                        <li><a href="<?php echo BASEURL; ?>project.html">Nossa História</a></li>
+                        <li><a href="<?php echo BASEURL; ?>elements.html">Dehonianos</a></li>
+                        <li><a href="<?php echo BASEURL; ?>project_details.html">Espiritualidade</a></li>
+                        <li><a href="<?php echo BASEURL; ?>project_details.html">Sacerdotes</a></li>
                       </ul>
                     </li>
-                    <li><a href="#">blog <i class="ti-angle-down"></i></a>
+                    <li>Notícias <i class="ti-angle-down"></i>
                       <ul class="submenu">
-                        <li><a href="blog.html">blog</a></li>
-                        <li><a href="single-blog.html">single-blog</a></li>
+                        <li><a href="<?php echo BASEURL; ?>project.html">Notícias em Geral</a></li>
+                        <li><a href="<?php echo BASEURL; ?>elements.html">Notícias da Paróquia</a></li>
+                        <li><a href="<?php echo BASEURL; ?>project_details.html">Artigos</a></li>
                       </ul>
                     </li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li>Interatividade <i class="ti-angle-down"></i>
+                      <ul class="submenu">
+                        <li><a href="<?php echo BASEURL; ?>project.html">Agenda</a></li>
+                        <li><a href="<?php echo BASEURL; ?>elements.html">Intenções</a></li>
+                        <li><a href="<?php echo BASEURL; ?>project_details.html">Liturgia Diária</a></li>
+                        <li><a href="<?php echo BASEURL; ?>project_details.html">Santo do dia</a></li>
+                      </ul>
+                    </li>
+                    <li><a class="active" href="about.html">Pastorais</a></li>
+                    <li><a href="services.html">Seja dizimista</a></li>
+                    <li>Contato <i class="ti-angle-down"></i>
+                      <ul class="submenu">
+                        <li><a href="<?php echo BASEURL; ?>project.html">Fale Conosco</a></li>
+                        <li><a href="<?php echo BASEURL; ?>elements.html">Horários</a></li>
+                        <li><a href="<?php echo BASEURL; ?>project_details.html">Localização</a></li>
+                      </ul>
+                    </li>
                   </ul>
                 </nav>
               </div>

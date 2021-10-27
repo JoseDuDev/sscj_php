@@ -1459,7 +1459,7 @@ h3 {
 /* line 340, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_header.scss */
 .header-area .header-top_area {
   padding: 0;
-  background: #040e27;
+  background: #250302;
 }
 
 /* line 343, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_header.scss */
@@ -1474,7 +1474,6 @@ h3 {
   }
 }
 
-/* line 350, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_header.scss */
 .header-area .header-top_area .social_media_links a {
   font-size: 15px;
   color: #c7c7c7;
@@ -1499,6 +1498,13 @@ h3 {
   font-size: 13px;
   margin-bottom: 0;
   float: right;
+  padding-left: 10px;
+}
+.header-area .header-top_area .header_right a {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 13px;
+  text-decoration: underline;
 }
 
 /* line 367, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_header.scss */

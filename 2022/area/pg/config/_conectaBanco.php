@@ -96,6 +96,29 @@ function find_for( $table = null, $field = null, $id = null ) {
 	return $found;
 }
 
+function find_query( $query = null ) {
+  
+	$database = open_database();
+	$found = null;
+
+	try {
+	  if ($query) {
+	    $result = $database->query($query);
+	    
+	    if ($result->num_rows > 0) {
+	      $found = $result->fetch_assoc();
+      }
+	    
+	  } 
+	} catch (Exception $e) {
+	  $_SESSION['message'] = $e->GetMessage();
+	  $_SESSION['type'] = 'danger';
+  }
+	
+	close_database($database);
+	return $found;
+}
+
 /**
  *  Pesquisa Todos os Registros de uma Tabela
  */
