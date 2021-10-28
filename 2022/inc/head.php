@@ -1,10 +1,3 @@
-<?php
-ob_start();
-include("area/pg/config/_configGerais.php");
-date_default_timezone_set('America/Sao_Paulo');
-?>
-
-<?php require_once 'config.php'; ?>
 <?php require_once DBAPI; ?>
 <!DOCTYPE html>
 <html lang="pt-br">

@@ -38,29 +38,39 @@
             </div>
           </div>
           <div class="col-xl-8 col-lg-9">
-            <div class="address_menu d-flex justify-content-end">
-              <div class="single_address  d-flex">
-                <div class="icon">
-                  <img
-                    src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/icon/header-address.svg"
-                    alt="">
-                </div>
-                <div class="address_info">
-                  <h3>Address</h3>
-                  <p>20/D, Kings road, Green lane</p>
-                </div>
-              </div>
-              <div class="single_address d-flex">
-                <div class="icon">
-                  <img
-                    src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/icon/headset.svg"
-                    alt="">
-                </div>
-                <div class="address_info">
-                  <h3>Call Us</h3>
-                  <p>+10 673 567 367</p>
-                </div>
-              </div>
+            <div class="header_right">
+              <ul class="social-media-list text-right list-inline"">
+              <li>
+                <a href=" https://twitter.com/mark_heath" title="Facebook do Santuário">
+                <i class="fab fa-facebook"></i>
+                </a>
+                </li>
+                <li>
+                  <a href="https://github.com/markheath">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/channel/UChV2-HyJ9XzsKLQRztd7Pmw">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://stackoverflow.com/users/7532/mark-heath">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://stackoverflow.com/users/7532/mark-heath">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://stackoverflow.com/users/7532/mark-heath">
+                    <i class="fab fa-telegram-plane"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -89,6 +99,7 @@
                         <li><a href="<?php echo BASEURL; ?>elements.html">Dehonianos</a></li>
                         <li><a href="<?php echo BASEURL; ?>project_details.html">Espiritualidade</a></li>
                         <li><a href="<?php echo BASEURL; ?>project_details.html">Sacerdotes</a></li>
+                        <li><a href="<?php echo BASEURL; ?>about.html">Pastorais</a></li>
                       </ul>
                     </li>
                     <li>Notícias <i class="ti-angle-down"></i>
@@ -106,7 +117,6 @@
                         <li><a href="<?php echo BASEURL; ?>project_details.html">Santo do dia</a></li>
                       </ul>
                     </li>
-                    <li><a class="active" href="about.html">Pastorais</a></li>
                     <li><a href="services.html">Seja dizimista</a></li>
                     <li>Contato <i class="ti-angle-down"></i>
                       <ul class="submenu">

@@ -1,33 +1,38 @@
-<?php require_once 'config.php'; ?>
-<?php require_once DBAPI; ?>
+<?php 
+require_once 'config.php'; 
+require_once DBAPI; 
+require_once DBAPIQUERY; 
 
-<?php include(HEAD_TEMPLATE); ?>
-<?php include(HEADER_TEMPLATE); ?>
-<?php $db = open_database(); ?>
+require_once GERAIS; 
+require_once FUNCOES; 
 
-<?php if ($db) : ?>
+ob_start();
+date_default_timezone_set('America/Sao_Paulo');
 
-<?php
-$banners = null;
-$banner = null;
+include(HEAD_TEMPLATE); 
+include(HEADER_TEMPLATE); 
+$db = open_database(); 
 
-// $banners=find_query("SELECT empresa, site, img FROM banner WHERE status='S' AND local='principal' ORDER BY id_o DESC");
-$result = mysqli_query($db, "SELECT empresa, site, img FROM banner WHERE status='S' AND local='principal' ORDER BY id_o DESC");
+if ($db) : 
+
+$result = consultar("SELECT id, empresa, site, img FROM banner WHERE status='S' AND local='principal' ORDER BY id_o DESC");
 ?>
 
 <!-- slider_area_start -->
 <?php if ($result) : ?>
 <div class="slider_area">
   <div class="slider_active owl-carousel">
-    <?php while($record = mysqli_fetch_array($result)){ ?>
-    <div class="single_slider  d-flex align-items-center overlay" style="background-image: url("
-      <?php echo "https://" . utf8_encode($GLOBALS['config']['url']) . "/" . str_replace("", "/", $record['img']); ?>")>
+    <?php 
+    while($row = $result->fetch_assoc()){ 
+      $imagem = "http://" . utf8_encode($GLOBALS['config']['url']);
+      $imagem .= "/area" . "/" . $row['img'];
+    ?>
+    <div class="single_slider  d-flex align-items-center overlay"
+      style="background-image: url('<?php echo $imagem; ?>')">
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-xl-9 col-md-9 col-md-12">
-            <div class="slider_text text-center">
-              <h3><?php echo utf8_encode($record['empresa']); ?></h3>
-              <a href="<?php echo $record['site']; ?>" class="boxed-btn3">Our Services</a>
+            <div class="slider_text text-center" id="banner<?php echo $row["id"]; ?>">
             </div>
           </div>
         </div>
@@ -46,31 +51,25 @@ $result = mysqli_query($db, "SELECT empresa, site, img FROM banner WHERE status=
       <div class="col-lg-4 col-md-4">
         <div class="single_feature text-center">
           <div class="icon">
-            <i class="flaticon-sketch"></i>
+            <i class="fas fa-bible"></i>
           </div>
-          <h3>Creative Plan & Design</h3>
-          <p>There are many variations of passages of lorem Ipsum available, but the majority have
-            suffered alteration.</p>
+          <h3>Liturgia Diária</h3>
         </div>
       </div>
       <div class="col-lg-4 col-md-4">
         <div class="single_feature text-center">
           <div class="icon">
-            <i class="flaticon-helmet"></i>
+            <i class="fas fa-cross"></i>
           </div>
-          <h3>Talented Peoples</h3>
-          <p>There are many variations of passages of lorem Ipsum available, but the majority have
-            suffered alteration.</p>
+          <h3>Santo do dia</h3>
         </div>
       </div>
       <div class="col-lg-4 col-md-4">
         <div class="single_feature text-center">
           <div class="icon">
-            <i class="flaticon-support"></i>
+            <i class="fas fa-calendar-alt"></i>
           </div>
-          <h3>Modern Tools</h3>
-          <p>There are many variations of passages of lorem Ipsum available, but the majority have
-            suffered alteration.</p>
+          <h3>Horários das missas</h3>
         </div>
       </div>
     </div>

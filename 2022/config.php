@@ -1,5 +1,4 @@
 <?php
-
 /** O nome do banco de dados*/
 define('DB_NAME', 'scj_novo');
 
@@ -21,10 +20,16 @@ if ( !defined('BASEURL') )
 	define('BASEURL', '/2022/');
 	
 /** caminho do arquivo de banco de dados **/
-if ( !defined('DBAPI') )
+if ( !defined('DBAPI') ){
 	define('DBAPI', ABSPATH . 'area/pg/config/_conectaBanco.php');
+	define('DBAPIQUERY', ABSPATH . 'area/pg/config/_conectar.php');
+}
+
+define('GERAIS', ABSPATH . 'area/pg/config/_configGerais.php');
+define('FUNCOES', ABSPATH . 'area/pg/config/_functions.php');
 
 define('HEAD_TEMPLATE', ABSPATH . 'inc/head.php');
 define('HEADER_TEMPLATE', ABSPATH . 'inc/header.php');
 define('FOOT_TEMPLATE', ABSPATH . 'inc/foot.php');
 define('FOOTER_TEMPLATE', ABSPATH . 'inc/footer.php');
+?>
