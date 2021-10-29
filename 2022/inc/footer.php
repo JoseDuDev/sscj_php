@@ -6,21 +6,27 @@
     <div class="container">
       <div class="bordered_1px">
         <div class="row">
-          <div class="col-lg-6 col-md-6">
+          <div class="col-lg-5 col-md-5">
             <div class="footer_logo">
               <a href="#">
-                <img
-                  src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/footer_logo.png"
+                <img src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/logob.png"
                   alt="">
               </a>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6">
-            <div class="download_btn">
-              <a href="#"> <img
-                  src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/icon/down.svg"
-                  alt=""> Download Brochure</a>
-            </div>
+          <div class="col-lg-7 col-md-7">
+            <h3 class="footer_title">
+              Inscreva-se
+            </h3>
+            <form action="#" class="form-inline">
+              <div class="form-group mb-2 espacamento6dir">
+                <input type="text" class="form-control form-control-sm" id="nome" placeholder="Nome">
+              </div>
+              <div class="form-group mb-2 espacamento6dir">
+                <input type="email" class="form-control form-control-sm" id="email" placeholder="E-mail">
+              </div>
+              <button type="submit" class="btn btn-primary mb-2 form-control-sm">Enviar</button>
+            </form>
           </div>
         </div>
       </div>
@@ -30,19 +36,28 @@
   <div class="footer_top">
     <div class="container">
       <div class="row">
-        <div class="col-xl-3 col-md-6 col-lg-3 ">
+        <div class="col-xl-6 col-md-6 col-lg-6">
           <div class="footer_widget">
             <h3 class="footer_title">
-              About
+              <?php echo $GLOBALS['config']['nome']; ?>
             </h3>
-            <p>5th flora, 700/D kings road, green <br> lane New York-1782 <br>
-              <a href="#">+10 367 826 2567</a> <br>
-              <a href="#">contact@carpenter.com</a>
-            </p>
-            <p>
-
-
-
+            <p><?php echo $GLOBALS['config']['endereco']; ?><br>
+              <span class="espacamento6dir"><i class="fas fa-phone-alt"></i>
+                <?php echo $GLOBALS['config']['telefone1']; ?></span>
+              <span class="espacamento6dir"><i class="fas fa-phone-alt"></i>
+                <?php echo $GLOBALS['config']['telefone2']; ?> </span>
+              <span>
+                <i class="fab fa-whatsapp"></i>
+                <a target="blank"
+                  href="https://api.whatsapp.com/send?phone=5547<?php echo str_replace("-", "", $GLOBALS['config']['celular']); ?>&text=Ol%C3%A1%20Santu%C3%A1rio%20SCJ!">
+                  <?php echo $GLOBALS['config']['celular']; ?>
+                </a>
+              </span>
+              <br>
+              <br>
+              <strong>Horário de Atendimento - Scretaria</strong>
+              <br>
+              <?php echo $GLOBALS['config']["msg3"]; ?>
             </p>
             <div class="socail_links">
               <ul>
@@ -58,17 +73,12 @@
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fa fa-instagram"></i>
+                    <i class="fab fa-instagram"></i>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fa fa-pinterest"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-youtube-play"></i>
+                    <i class="fab fa-youtube"></i>
                   </a>
                 </li>
               </ul>
@@ -76,7 +86,7 @@
 
           </div>
         </div>
-        <div class="col-xl-2 col-md-6 col-lg-2">
+        <div class="col-xl-3 col-md-6 col-lg-3">
           <div class="footer_widget">
             <h3 class="footer_title">
               Popular Searches
@@ -89,7 +99,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-xl-2 col-md-6 col-lg-2 offset-xl-1 offset-lg-1">
+        <div class="col-xl-3 col-md-6 col-lg-3">
           <div class="footer_widget">
             <h3 class="footer_title">
               Useful Links
@@ -102,19 +112,6 @@
             </ul>
           </div>
         </div>
-        <div class="col-xl-4 col-md-6 col-lg-4">
-          <div class="footer_widget">
-            <h3 class="footer_title">
-              Subscribe
-            </h3>
-            <form action="#" class="newsletter_form">
-              <input type="text" placeholder="Enter your mail">
-              <button type="submit">Subscribe</button>
-            </form>
-            <p class="newsletter_text">Esteem spirit temper too say adieus who direct esteem esteems
-              luckily.</p>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -122,15 +119,18 @@
     <div class="container">
       <div class="footer_border"></div>
       <div class="row">
-        <div class="col-xl-12">
+        <div class="col-xl-9">
           <p class="copy_right text-center">
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. 
+          Copyright © Paróquia São Luís Gonzaga. Todos os direitos reservados-->
             Copyright &copy;<script>
             document.write(new Date().getFullYear());
-            </script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i>
-            by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </script>&nbsp;&nbsp;Santuário Sagrado Coração de Jesus. Todos os direitos reservados.</i>
           </p>
+        </div>
+        <div class="col-xl-3">
+          <p class="copy_right text-center">Desenvolvido por <a href="" title="Desenvolvedor José Eduardo">José
+              Eduardo</a></p>
         </div>
       </div>
     </div>

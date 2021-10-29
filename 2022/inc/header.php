@@ -25,19 +25,20 @@
         </div>
       </div>
     </div>
-    <div class="address_bar d-none d-lg-block">
+    <div class="address_bar d-none d-lg-block" style="background-image: url('<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/panoramica.jpg');background-size: auto;
+    opacity: 0.75;background-position: center bottom;">
       <div class="container">
         <div class="row justify-content-between align-items-center">
-          <div class="col-xl-4 col-lg-3">
+          <div class="col-xl-4 col-lg-4">
             <div class="logo">
               <a href="index.html">
                 <img class="img-fluid"
-                  src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/logob.png"
+                  src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/logo.png"
                   alt="<?php echo $_SESSION['titulo_atual']; ?>">
               </a>
             </div>
           </div>
-          <div class="col-xl-8 col-lg-9">
+          <div class="col-xl-8 col-lg-8">
             <div class="header_right">
               <ul class="social-media-list text-right list-inline"">
               <li>
@@ -46,27 +47,30 @@
                 </a>
                 </li>
                 <li>
-                  <a href="https://github.com/markheath">
+                  <a href="https://github.com/markheath" title="Instagram do Santuário">
                     <i class="fab fa-instagram"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.youtube.com/channel/UChV2-HyJ9XzsKLQRztd7Pmw">
+                  <a href="https://www.youtube.com/channel/UChV2-HyJ9XzsKLQRztd7Pmw"
+                    title="Canal do Youtube do Santuário">
                     <i class="fab fa-youtube"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://stackoverflow.com/users/7532/mark-heath">
+                  <a href="https://stackoverflow.com/users/7532/mark-heath" title="Twitter do Santuário">
                     <i class="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://stackoverflow.com/users/7532/mark-heath">
+                  <a href="https://stackoverflow.com/users/7532/mark-heath"
+                    title="Entre para o grupo de WhatsApp do Santuário">
                     <i class="fab fa-whatsapp"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://stackoverflow.com/users/7532/mark-heath">
+                  <a href="https://stackoverflow.com/users/7532/mark-heath"
+                    title="Entre para o grupo de Telegram do Santuário">
                     <i class="fab fa-telegram-plane"></i>
                   </a>
                 </li>
@@ -117,7 +121,6 @@
                         <li><a href="<?php echo BASEURL; ?>project_details.html">Santo do dia</a></li>
                       </ul>
                     </li>
-                    <li><a href="services.html">Seja dizimista</a></li>
                     <li>Contato <i class="ti-angle-down"></i>
                       <ul class="submenu">
                         <li><a href="<?php echo BASEURL; ?>project.html">Fale Conosco</a></li>

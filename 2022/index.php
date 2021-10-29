@@ -48,29 +48,48 @@ $result = consultar("SELECT id, empresa, site, img FROM banner WHERE status='S' 
 <div class="features_area">
   <div class="container">
     <div class="row no-gutters">
-      <div class="col-lg-4 col-md-4">
-        <div class="single_feature text-center">
-          <div class="icon">
-            <i class="fas fa-bible"></i>
+      <div class="col-lg-3 col-md-6">
+        <a href="<?php echo "http://" . utf8_encode($GLOBALS['config']['url']); ?>liturgia_diaria.php"
+          title="Liturgia Diária">
+          <div class="single_feature text-center">
+            <div class="icon">
+              <i class="fas fa-bible"></i>
+            </div>
+            <h3>Liturgia Diária</h3>
           </div>
-          <h3>Liturgia Diária</h3>
-        </div>
+        </a>
       </div>
-      <div class="col-lg-4 col-md-4">
-        <div class="single_feature text-center">
-          <div class="icon">
-            <i class="fas fa-cross"></i>
+      <div class="col-lg-3 col-md-6">
+        <a href="<?php echo "http://" . utf8_encode($GLOBALS['config']['url']); ?>santododia.php" title="Santo do dia">
+          <div class="single_feature text-center">
+            <div class="icon">
+              <i class="fas fa-cross"></i>
+            </div>
+            <h3>Santo do dia</h3>
           </div>
-          <h3>Santo do dia</h3>
-        </div>
+        </a>
       </div>
-      <div class="col-lg-4 col-md-4">
-        <div class="single_feature text-center">
-          <div class="icon">
-            <i class="fas fa-calendar-alt"></i>
+      <div class="col-lg-3 col-md-6">
+        <a href="<?php echo "http://" . utf8_encode($GLOBALS['config']['url']); ?>horarios.php"
+          title="Horários das missas">
+          <div class="single_feature text-center">
+            <div class="icon">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <h3>Horários</h3>
           </div>
-          <h3>Horários das missas</h3>
-        </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <a href="<?php echo "http://" . utf8_encode($GLOBALS['config']['url']); ?>dizimo.php" title="Seja dizimista">
+          <div class="single_feature text-center">
+            <div class="icon">
+              <img src="<?php echo "http://".$_SERVER['SERVER_NAME'].$_SERVER ['REQUEST_URI']; ?>assets/img/dizimo.png"
+                alt="Logo dízimo">
+            </div>
+            <h3>Seja dizimista</h3>
+          </div>
+        </a>
       </div>
     </div>
   </div>
@@ -483,7 +502,25 @@ $result = consultar("SELECT id, empresa, site, img FROM banner WHERE status='S' 
 </div>
 <!-- contact_us_end -->
 
-
+<!-- <div class="fluid-container" style="align-itens: center;">
+  <div class="modal fade" id="cookieModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="notice d-flex justify-content-between align-items-center">
+            <div class="cookie-text">This website uses cookies to personalize content and analyse traffic in order to
+              offer you a better experience.</div>
+            <div class="buttons d-flex flex-column flex-lg-row">
+              <a href="#a" class="btn btn-success btn-sm" data-dismiss="modal">Aceito</a>
+              <a href="#a" class="btn btn-secondary btn-sm" data-dismiss="modal">Leia mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
 <?php else : ?>
 <div class="alert alert-danger" role="alert">
   <p><strong>ERRO:</strong> Não foi possível Conectar ao Banco de Dados!</p>

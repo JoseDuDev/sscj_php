@@ -6,76 +6,76 @@
 <script type="text/javascript" language="javascript" src="js/jquery.mousewheel.min.js"></script>
 <script type="text/javascript" language="javascript" src="js/jquery.touchSwipe.min.js"></script>
 <script type="text/javascript" language="javascript">
-	$(function() {
-		$('#foo2').carouFredSel({
-			auto	: true,
-			prev 	: '#prev2',
-			next 	: '#next2',
-			scroll 	: 1,
-			swipe 	: {
-				onMouse: true,
-				onTouch: true
-			}
-		});
-		$('#foo1').carouFredSel({
-			width   : 980,
-			auto	: {
-				items 			: 6,
-				duration		: 18000,
-				easing			: "linear",
-				timeoutDuration	: 0,
-				pauseOnHover	: "immediate"
-			}
-		});
-		$('.slider2').mobilyslider({
-			content: '.sliderContent2',
-			children: 'div',
-			transition: 'fade',
-			animationSpeed: 500,
-			autoplay: true,
-			autoplaySpeed: 5000,
-			pauseOnHover: false,
-			bullets: false,
-			arrows: false,
-			arrowsHide: false,
-			animationStart: function(){},
-			animationComplete: function(){}
-		});
-	});
-	var theInt = null;
-	var $crosslink, $navthumb;
-	var curclicked = 0;	
-	theInterval = function(cur){
-		clearInterval(theInt);		
-		if( typeof cur != 'undefined' )
-			curclicked = cur;		
-		$crosslink.removeClass("active-thumb");
-		$navthumb.eq(curclicked).parent().addClass("active-thumb");
-			$(".stripNav ul li a").eq(curclicked).trigger('click');		
-		theInt = setInterval(function(){
-			$crosslink.removeClass("active-thumb");
-			$navthumb.eq(curclicked).parent().addClass("active-thumb");
-			$(".stripNav ul li a").eq(curclicked).trigger('click');
-			curclicked++;
-			if( 6 == curclicked )
-				curclicked = 0;			
-		}, 3000);
-	};	
-	$(function(){		
-		$("#main-photo-slider").codaSlider();		
-		$navthumb = $(".nav-thumb");
-		$crosslink = $(".cross-link");		
-		$navthumb
-		.click(function() {
-			var $this = $(this);
-			theInterval($this.parent().attr('href').slice(1) - 1);
-			return false;
-		});		
-		theInterval();
-	});
+$(function() {
+  $('#foo2').carouFredSel({
+    auto: true,
+    prev: '#prev2',
+    next: '#next2',
+    scroll: 1,
+    swipe: {
+      onMouse: true,
+      onTouch: true
+    }
+  });
+  $('#foo1').carouFredSel({
+    width: 980,
+    auto: {
+      items: 6,
+      duration: 18000,
+      easing: "linear",
+      timeoutDuration: 0,
+      pauseOnHover: "immediate"
+    }
+  });
+  $('.slider2').mobilyslider({
+    content: '.sliderContent2',
+    children: 'div',
+    transition: 'fade',
+    animationSpeed: 500,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    pauseOnHover: false,
+    bullets: false,
+    arrows: false,
+    arrowsHide: false,
+    animationStart: function() {},
+    animationComplete: function() {}
+  });
+});
+var theInt = null;
+var $crosslink, $navthumb;
+var curclicked = 0;
+theInterval = function(cur) {
+  clearInterval(theInt);
+  if (typeof cur != 'undefined')
+    curclicked = cur;
+  $crosslink.removeClass("active-thumb");
+  $navthumb.eq(curclicked).parent().addClass("active-thumb");
+  $(".stripNav ul li a").eq(curclicked).trigger('click');
+  theInt = setInterval(function() {
+    $crosslink.removeClass("active-thumb");
+    $navthumb.eq(curclicked).parent().addClass("active-thumb");
+    $(".stripNav ul li a").eq(curclicked).trigger('click');
+    curclicked++;
+    if (6 == curclicked)
+      curclicked = 0;
+  }, 3000);
+};
+$(function() {
+  $("#main-photo-slider").codaSlider();
+  $navthumb = $(".nav-thumb");
+  $crosslink = $(".cross-link");
+  $navthumb
+    .click(function() {
+      var $this = $(this);
+      theInterval($this.parent().attr('href').slice(1) - 1);
+      return false;
+    });
+  theInterval();
+});
 </script>
 <div class="banner_corpo">
-	<?php
+  <?php
 		$selb = mysql_query("SELECT * FROM banner WHERE status='S' AND local='principal' ORDER BY id_o DESC");	
 		if(mysql_num_rows($selb)>1){
 			echo '<div class="banner_paginas">
@@ -104,38 +104,52 @@
 	?>
 </div>
 <div class="area_icones">
-	<div class="util">
-		<ul class="icones">
-			<a href="./contato/horarios"><li class="horario"></li></a>
-			<a href="./interatividade/liturgia-diaria/<?php echo date("Y-m-d"); ?>"><li class="liturgia"></li></a>
-			<a href="./interatividade/santo-do-dia/<?php echo date("Y-m-d"); ?>"><li class="santo"></li></a>
-			<a href="./interatividade/pedidos-de-oracao"><li class="pedidos"></li></a>
-			<a href="./interatividade/intencoes"><li class="intencao"></li></a>
-			<a href="./interatividade/jornal-on-line"><li class="jonline"></li></a>
-		</ul>
-	</div>
+  <div class="util">
+    <ul class="icones">
+      <a href="./contato/horarios">
+        <li class="horario"></li>
+      </a>
+      <a href="./interatividade/liturgia-diaria/<?php echo date("Y-m-d"); ?>">
+        <li class="liturgia"></li>
+      </a>
+      <a href="./interatividade/santo-do-dia/<?php echo date("Y-m-d"); ?>">
+        <li class="santo"></li>
+      </a>
+      <a href="./interatividade/pedidos-de-oracao">
+        <li class="pedidos"></li>
+      </a>
+      <a href="./interatividade/intencoes">
+        <li class="intencao"></li>
+      </a>
+      <a href="./interatividade/jornal-on-line">
+        <li class="jonline"></li>
+      </a>
+    </ul>
+  </div>
 </div>
 <div class="util">
-	<div class="area_agenda">
-		<p>AGENDA DO SANTUÁRIO</p>
-		<div class="list_carousel">
-			<ul id="foo2">
-				<?php
+  <div class="area_agenda">
+    <p>AGENDA DO SANTUÁRIO</p>
+    <div class="list_carousel">
+      <ul id="foo2">
+        <?php
 				$vagenda = mysql_query("SELECT * FROM agenda WHERE data_reg>='".date("Y-m-d")."' ORDER BY data_reg ASC");
 				while($r = mysql_fetch_object($vagenda)){
 					echo '<li><a href="./interatividade/agenda/'.$r->urlcheck.'" style="font-size: 18px; line-height: 25px; color: #ffffff; text-align: left; font-family: "Arial";">'.implode("/",array_reverse(explode('-',$r->data_reg))).'<div>'.$r->nome.'</div></a></li>';
 				}
 				?>
-			</ul>
-			<div class="clearfix"></div>
-			<a id="prev2" class="prev" href="#">&nbsp;</a>
-			<a id="next2" class="next" href="#">&nbsp;</a>
-		</div>
-	</div>
-	<div class="area_noticias">
-		<span class="intro direita tdireita paddingdireita"><div class="vicone1">&nbsp;</div>ÚLTIMAS NOTÍCIAS</span>
-		<ul>
-			<?php
+      </ul>
+      <div class="clearfix"></div>
+      <a id="prev2" class="prev" href="#">&nbsp;</a>
+      <a id="next2" class="next" href="#">&nbsp;</a>
+    </div>
+  </div>
+  <div class="area_noticias">
+    <span class="intro direita tdireita paddingdireita">
+      <div class="vicone1">&nbsp;</div>ÚLTIMAS NOTÍCIAS
+    </span>
+    <ul>
+      <?php
 			$nots = array();
 			$idapresenta = 1;
 			// BUSCA DAS NOTÍCIAS PADRÃO
@@ -195,14 +209,16 @@
 				}
 			}
 			?>
-		</ul>
-	</div>
-	<div class="area_fotos">
-		<a href="./interatividade/fotos"><span class="intro esquerda tesquerda paddingesquerda"><div class="vicone2">&nbsp;</div>FOTOS RECENTES</span></a>
-		<div class="slider-wrap">
-			<div id="main-photo-slider" class="csw">
-				<div class="panelContainer">
-					<?php
+    </ul>
+  </div>
+  <div class="area_fotos">
+    <a href="./interatividade/fotos"><span class="intro esquerda tesquerda paddingesquerda">
+        <div class="vicone2">&nbsp;</div>FOTOS RECENTES
+      </span></a>
+    <div class="slider-wrap">
+      <div id="main-photo-slider" class="csw">
+        <div class="panelContainer">
+          <?php
 					$vfoto = mysql_query("SELECT * FROM album_fotos ORDER BY id DESC LIMIT 5");
 					$c=0;
 					while($rw = mysql_fetch_object($vfoto)){
@@ -223,9 +239,9 @@
 						echo '</a>';
 					}
 					?>
-				</div>
-			</div>
-			<?php
+        </div>
+      </div>
+      <?php
 			$vfoto = mysql_query("SELECT * FROM album_fotos ORDER BY id DESC LIMIT 5");
 			$c=0;
 			while($rw = mysql_fetch_object($vfoto)){
@@ -239,19 +255,19 @@
 			}
 			echo '</div>';
 			?>
-		</div>
-	</div>
+    </div>
+  </div>
 </div>
 <?php
 $selb = mysql_query("SELECT * FROM parceiros WHERE status='S' ORDER BY id_o ASC");	
 if(mysql_num_rows($selb)>1){
 ?>
 <div class="util">
-	<div class="area_patrocinio">
-		<div class="intro2">PATROCINADORES</div>
-		<div class="linhav" style="margin-top: 42px;"></div>
-		<div class="image_carousel">
-		<?php
+  <div class="area_patrocinio">
+    <div class="intro2">PATROCINADORES</div>
+    <div class="linhav" style="margin-top: 42px;"></div>
+    <div class="image_carousel">
+      <?php
 		echo '<div class="slider2">
 			<div class="sliderContent2">';
 				while($dados = mysql_fetch_object($selb)){
@@ -268,8 +284,8 @@ if(mysql_num_rows($selb)>1){
 			echo '</div>
 		</div>';
 		?>
-		</div>
-		<div class="linhav"></div>
-	</div>
+    </div>
+    <div class="linhav"></div>
+  </div>
 </div>
 <?php } ?>
