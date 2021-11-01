@@ -1,20 +1,21 @@
 <?php
 /** O nome do banco de dados*/
 define('DB_NAME', 'scj_novo');
-
-/** Usuário do banco de dados MySQL */
+/** Usuário do banco de dados MySQL. producao: scj_novo: dev: root*/
 define('DB_USER', 'root');
-
-/** Senha do banco de dados MySQL */
+/** Senha do banco de dados MySQL. producao: libes2013: dev: '' */
 define('DB_PASSWORD', '');
-
 /** nome do host do MySQL */
 define('DB_HOST', 'localhost');
 
 /** caminho absoluto para a pasta do sistema **/
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
-	
+
+/** caminho absoluto para a pasta do sistema **/
+if ( !defined('ABSLOCAL') )
+define('ABSLOCAL', $_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']) . '/');
+
 /** caminho no server para o sistema **/
 if ( !defined('BASEURL') )
 	define('BASEURL', '/2022/');
